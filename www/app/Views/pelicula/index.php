@@ -7,6 +7,7 @@
 </head>
 <body>
   <h1>Listado de películas</h1>
+  <a href="/categoria"><-- Ir a categorías</a>
   <a href="/pelicula/new">Crear</a>
   <table>
     <tr>
