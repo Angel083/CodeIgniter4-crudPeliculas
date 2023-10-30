@@ -29,3 +29,7 @@ Siguiendo un curso en Udemy, comienzo un proyecto para la creación de un CRUD b
     docker compose exec web composer update
   ```
 - Listo, tendrás el proyecto en un contenedor de docker, lo que facilitará instalarlo en cualquier computadora y S.O que tenga docker.
+
+## Estándares para código legible
+- Editor config
+  Recuerda tener instalada la extesión en VSC llamada **EditorConfig for VS Code** para tener el código estándarizado y que no cause problemas
