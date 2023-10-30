@@ -6,7 +6,7 @@ services:
     restart: always
     environment:
       MARIADB_ROOT_PASSWORD: root
-      MARIADB_DATABASE: eks_content
+      # MARIADB_DATABASE: eks_content
       # MARIADB_USER: root
       MARIADB_PASSWORD: root
     volumes:
