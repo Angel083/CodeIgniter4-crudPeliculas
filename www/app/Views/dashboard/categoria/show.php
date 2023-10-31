@@ -9,7 +9,7 @@
     <h1><?= $categoria['titulo']?></h1>
     <span>ID: <b><?= $categoria['id']?></b></span>
     <div>
-        <a href="/categoria">Regresar al inicio</a>
+        <a href="/dashboard/categoria">Regresar al inicio</a>
     </div>
 </body>
 </html>

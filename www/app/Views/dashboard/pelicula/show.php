@@ -8,6 +8,6 @@
 <body>
   <h1><?= $pelicula['titulo'] ?></h1> 
   <p><?= $pelicula['descripcion'] ?></p> 
-  <a href="/pelicula">Regresar</a>
+  <a href="/dashboard/pelicula">Regresar</a>
 </body>
 </html>

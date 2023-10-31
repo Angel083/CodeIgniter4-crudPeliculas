@@ -6,7 +6,7 @@
     <title>Crear nueva categoría</title>
 </head>
 <body>
-    <form action="/categoria/create" method="post">
+    <form action="/dashboard/categoria/create" method="post">
         <label for="titulo">Titulo</label>
         <input type="text" name="titulo" placeholder="titulo" id="titulo">
         <button type="submit">Guardar</button>

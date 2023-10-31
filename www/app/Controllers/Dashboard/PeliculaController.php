@@ -1,19 +1,19 @@
 <?php
 
-namespace App\Controllers;
+namespace App\Controllers\Dashboard;
 
 use App\Controllers\BaseController;
 
 use App\Models\PeliculaModel;
 
-class Pelicula extends BaseController
+class PeliculaController extends BaseController
 {
     public function index()
     {
         $peliculaModel = new PeliculaModel();
         $peliculas = $peliculaModel->findAll();
 
-        return view("pelicula/index", [
+        return view("dashboard/pelicula/index", [
             'peliculas' => $peliculas
         ]);
     }
@@ -21,14 +21,14 @@ class Pelicula extends BaseController
     {
         $peliculaModel = new PeliculaModel();
         $pelicula = $peliculaModel->find($id);
-        return view("pelicula/show", [
+        return view("dashboard/pelicula/show", [
             "pelicula" => $pelicula
         ]);
     }
 
     public function new ()
     {
-      return view('pelicula/new');
+      return view('dashboard/pelicula/new');
     }
 
     public function create ()
@@ -40,14 +40,14 @@ class Pelicula extends BaseController
             'titulo'=> $this->request->getPost('titulo'),
             'descripcion'=> $this->request->getPost('descripcion')
         ]);
-        return redirect('pelicula');
+        return redirect('dashboard/pelicula');
     }
 
     public function edit ($id)
     {
         $peliculaModel = new PeliculaModel();
         $pelicula = $peliculaModel->find($id); 
-        return view('pelicula/edit', ["pelicula" => $pelicula]);
+        return view('dashboard/pelicula/edit', ["pelicula" => $pelicula]);
     }
 
     public function update ($id)
@@ -57,13 +57,13 @@ class Pelicula extends BaseController
             'titulo' => $this->request->getPost("titulo"),
             'descripcion' => $this->request->getPost("descripcion")
         ]);
-        return redirect('pelicula');
+        return redirect('dashboard/pelicula');
     }
     public function delete($id)
     {
         $peliculaModel = new PeliculaModel();
         $peliculaModel->delete($id);
-        return redirect('pelicula');
+        return redirect('dashboard/pelicula');
     }
 }
 

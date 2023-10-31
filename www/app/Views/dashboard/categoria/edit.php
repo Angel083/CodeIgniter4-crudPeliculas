@@ -6,7 +6,7 @@
     <title>Editar categoria: <?= $categoria['titulo']?></title>
 </head>
 <body>
-    <form action="/categoria/update/<?= $categoria['id']?>" method="post">
+    <form action="/dashboard/categoria/update/<?= $categoria['id']?>" method="post">
         <label for="titulo">Titulo</label>
         <input type="text" name="titulo" placeholder="titulo" id="titulo" value="<?= $categoria['titulo']?>">
         <button type="submit">Guardar</button>

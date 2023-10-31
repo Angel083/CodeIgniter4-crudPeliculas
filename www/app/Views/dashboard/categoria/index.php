@@ -8,9 +8,9 @@
 <body>
   <h1>Listado de categorías</h1>
   <div>
-     <a href="/pelicula"><-- Ir a peliculas</a>
+     <a href="/dashboard/pelicula"><-- Ir a peliculas</a>
   </div>
-  <a href="/categoria/new">Crear</a>
+  <a href="/dashboard/categoria/new">Crear</a>
   <table>
     <tr>
       <th>Id</th>
@@ -26,9 +26,9 @@
           <?= $categoria['titulo'] ?>
         </td>
         <td>
-          <a href="/categoria/show/<?= $categoria['id'] ?>">Mostrar</a>
-          <a href="/categoria/edit/<?= $categoria['id'] ?>">Editar</a>
-          <form action="/categoria/delete/<?= $categoria['id'] ?>" method="post" style="display: inline-block">
+          <a href="/dashboard/categoria/show/<?= $categoria['id'] ?>">Mostrar</a>
+          <a href="/dashboard/categoria/edit/<?= $categoria['id'] ?>">Editar</a>
+          <form action="/dashboard/categoria/delete/<?= $categoria['id'] ?>" method="post" style="display: inline-block">
             <button type="submit" style="border: none; background: none; cursor: pointer;">Eliminar</button>
           </form>
         </td>

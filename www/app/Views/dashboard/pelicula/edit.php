@@ -6,7 +6,7 @@
   <title>Editar Película</title>
 </head>
 <body>
-  <form action="/pelicula/update/<?= $pelicula['id']?>" method="post">
+  <form action="/dashboard/pelicula/update/<?= $pelicula['id']?>" method="post">
     <label for="titulo">Titulo</label>
     <input type="text" name="titulo" placeholder="titulo" id="titulo"  value="<?= $pelicula['titulo']?>">
     <label for="descripcion">Descripción</label>
